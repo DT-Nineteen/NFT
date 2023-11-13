@@ -115,7 +115,7 @@ const NFTCard = (props: NFTCardProps) => {
         <AddressAvatar address={nft.owner} />
       </div>
       <button
-        className="group flex h-16 items-center justify-center bg-black text-lg font-semibold text-white"
+        className="group flex h-16 items-center justify-center bg-blue-800 text-lg font-semibold text-white"
         onClick={onButtonClick}
         disabled={loading}
       >
