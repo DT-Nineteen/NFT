@@ -12,8 +12,8 @@ const handler: NextApiHandler = async (req, res) => {
   try {
     // Parse req body and save image in /tmp
     const data: any = await new Promise((res, rej) => {
-      const uploadDir = `/tmp`;
-      const form = formidable({ multiples: true, uploadDir });
+      const uploadDir = `tmp`;
+      const form = formidable({ multiples: true, 'tmp' });
       form.parse(req, (err, fields, files) => {
         if (err) rej(err);
         res({ ...fields, ...files });
